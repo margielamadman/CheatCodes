@@ -1,5 +1,5 @@
 #Generate key pair with
-ssh-keygen -f <filename> -t rsa -b 4096 #Where -f specifies the filename, -t specifies the type of key to create, -b specifies the number of bits in the key
+ssh-keygen -f <filename> -t rsa -b 4096 -C "comment here" #Where -f specifies the filename, -t specifies the type of key to create, -b specifies the number of bits in the key
 
 #Save where you want
 #Enter a passphrase at prompt
