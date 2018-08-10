@@ -1,0 +1,28 @@
+#Generate key pair with
+ssh-keygen -f <filename> -t rsa -b 4096 #Where -f specifies the filename, -t specifies the type of key to create, -b specifies the number of bits in the key
+
+#Save where you want
+#Enter a passphrase at prompt
+
+#Copy public key to destination
+ssh-copy-id username@remote_host # You need to have password SSH access for this to work
+#For public key not in ~/.ssh
+ssh-copy-id -i <local> <dest>
+
+#To change or remove a passphrase
+ssh-keygen -p
+
+#Use ssh-agent to avoid having to type password
+eval 'ssh-agent'
+Agent pid <num>
+
+#Add your key to the agent for a specified time
+ssh-add -t 3h
+
+#If you are doing multiple hops use agent forwarding to ensure your private key never leaves your private computer
+ssh -A username@remote_host
+
+#Disable Password Authentication on ssh server
+sudo vim /etc/ssh/sshd_config:
+PasswordAuthentication no
+sudo systemctl reload sshd #Restart the server for changes to take effect
