@@ -3,4 +3,5 @@ $ mysql
 > use <db name>;
 > show TABLES;
 > describe <table>;
-> 
+> SELECT * FROM <table> WHERE name="<record to delete>";
+> DELETE from <table> WHERE name="<record to delete>"; 
