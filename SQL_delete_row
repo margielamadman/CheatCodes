@@ -1,0 +1,6 @@
+$ mysql
+> show DATABASES;
+> use <db name>;
+> show TABLES;
+> describe <table>;
+> 
