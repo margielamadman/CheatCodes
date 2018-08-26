@@ -1,0 +1,11 @@
+# Start new named session
+tmux new -s <name>
+
+# Detach
+prefix + d
+
+# List sessions
+tmux ls
+
+# Attach to session
+tmux a -t <name>
