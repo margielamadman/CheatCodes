@@ -1,6 +1,0 @@
-# Moving panes to windows
-:join-pane -s <window>.<pane> //join pane from somewhere to here
-
-:join-pane -t <window>.<pane> //send pane from here to somewhere else
-
-:break-pane //break pane to a new window
