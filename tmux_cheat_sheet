@@ -16,3 +16,7 @@ tmux a -t <name>
 :join-pane -t <window>.<pane> //send pane from here to somewhere else
 
 :break-pane //break pane to a new window
+
+# Change status bar colors
+:set -g status-bg <color>
+:set -g status-fg <color>
