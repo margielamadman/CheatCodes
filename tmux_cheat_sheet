@@ -10,6 +10,9 @@ tmux ls
 # Attach to session
 tmux a -t <name>
 
+# Show pane numbers
+prefix + q
+
 # Moving panes to windows
 :join-pane -s <window>.<pane> //join pane from somewhere to here
 
