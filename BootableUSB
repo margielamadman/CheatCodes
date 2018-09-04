@@ -1,0 +1,8 @@
+#View disks and partitions
+$ sudo fdisk -l
+
+#Create bootable drive
+#dd command copies .iso file to drive by blocks of 4M at a time.
+#shows status along the way
+#after the job is done sync clears the cache, ensuring that all the data is written to the flash drive and nothing is left in the cache.
+$ sudo dd bs=4M if=<.iso> of=/dev/sdX status=progress && sync
