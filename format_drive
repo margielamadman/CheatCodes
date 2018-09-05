@@ -1,0 +1,18 @@
+# Find your drive
+$ sudo fdisk -l
+
+# Wipe filesystem from drive
+$ sudo wipefs --all /dev/sdX	//may need to add the --force option
+
+# Create a new partition
+$ sudo cfdisk /dev/sdX	// this will open up fdisk tui
+	//select dos and press enter
+	//keep drive at max size
+	//press enter twice, this will make it the primary partition
+	//select Write and press enter to make the changes
+
+# Check for your new drive
+$ sudo fdisk -l
+
+# Format the newly created partition, with the FAT filesystem
+$ sudo mkfs.vfat -n '<label>' /dev/sdX#	// make sure you specify the partition with the num at the end
