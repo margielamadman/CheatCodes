@@ -1,0 +1,6 @@
+chmod 700 ~/.ssh #Must only be writable by you
+chmod 600 ~/.ssh/id_rsa #Must stay private
+chmod 644 ~/.ssh/id_rsa.pub
+chmod 644 ~/.ssh/authorized_keys
+chmod 755 ~/ #Home dir must only be writable by you
+chown -R $USER:$USER  /home/$USER/.ssh #Make sure you own the files
