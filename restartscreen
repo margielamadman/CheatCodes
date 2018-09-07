@@ -1,8 +1,0 @@
-#First kill all current screen sessions
-killall screen
-
-#Start new screen session with serial console
-screen /dev/ttyUSB0
-
-#Now you can just use one command to connect
-screen -x
