@@ -11,3 +11,6 @@ screen -x
 screen -ls # list all screen sessions
 screen -S <pid>.<sessionname> -X sessionname <new name> #-S specifies the session, -X passes the command to rename the session
 screen -x <session name>
+
+#Start screen in detached mode on a serial port
+screen -S <name> -d -m /dev/ttyUSB*
