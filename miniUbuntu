@@ -39,3 +39,7 @@ $ lsblk //To see the mount point of the USB drive
 $ cp -r ~/Documents/mini/* <mountpoint of drive>
 
 //Reboot and boot from this USB drive
+//After install and on your first boot
+	//press "e" during the grub install
+	//on the linux line remove "$vt_handoff"
+	//press f10 to boot into your new build
