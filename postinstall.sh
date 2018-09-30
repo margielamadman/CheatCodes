@@ -51,7 +51,14 @@ sudo mkdir -p ~/.config/fontconfig/ && cp .config/fontconfig/fonts.conf ~/.confi
 sudo mkdir -p ~/.config/htop/ && cp .config/htop/htoprc ~/.config/htop/
 sudo mkdir -p ~/.config/i3/ && cp .config/i3/config ~/.config/i3/
 
+#create directories
+cd
+sudo mkdir Documents
+sudo mkdir Downloads
+sudo mkdir ~/Documents/repos
+
 #done
 cd
-echo "Please reboot"
+echo "Copy over your ssh keys and fill out your gitconfig."
+echo "Please reboot."
 
