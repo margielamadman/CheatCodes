@@ -5,7 +5,7 @@
 apt-get update && apt-get upgrade -y
 
 # Install packages
-apt -y install build-essential git wget curl software-properties-common ubuntu-drivers-common xorg xserver-xorg volumeicon-alsa network-manager libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev libxcb-icccm4-dev libyajl-dev libstartup-notification0-dev libxcb-randr0-dev libev-dev libxcb-cursor-dev libxcb-xinerama0-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev autoconf libxcb-xrm0 libxcb-xrm-dev automake i3 unclutter vim tmux git thunderbird neofetch fonts-noto fonts-inconsolata acpi compton fontconfig scrot htop tlp caca-utils atool mediainfo poppler-utils arandr feh dosfstools exfat-utils ffmpeg ntfs-3g pulsemixer unrar unzip zathura snapd pulseaudio x11-xkb-utils mesa-utils mesa-utils-extra
+apt -y install build-essential git wget curl software-properties-common ubuntu-drivers-common xorg xserver-xorg volumeicon-alsa network-manager libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev libxcb-icccm4-dev libyajl-dev libstartup-notification0-dev libxcb-randr0-dev libev-dev libxcb-cursor-dev libxcb-xinerama0-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev autoconf libxcb-xrm0 libxcb-xrm-dev automake i3 unclutter vim tmux git thunderbird neofetch fonts-noto fonts-inconsolata acpi compton fontconfig scrot htop tlp caca-utils atool mediainfo poppler-utils arandr feh dosfstools exfat-utils ffmpeg ntfs-3g pulsemixer unrar unzip zathura snapd pulseaudio x11-xkb-utils mesa-utils mesa-utils-extra network-manager-gnome
 
 #Install snaps
 snap install vlc
@@ -64,6 +64,7 @@ mkdir Downloads
 mkdir ~/Documents/repos
 mkdir ~/.ssh
 mkdir -p /media/usb
+chown -R $USER:$USER /home/$USER/
 
 #done
 cd
