@@ -114,6 +114,10 @@ You can make sure the setting was set correctly using:
 
 `Router# show running-config | include boot system`
 
+Delete the old image:
+
+`Router# delete flash:<old-image>`
+
 Finally reload the router:
 
 `Router# reload`
@@ -123,10 +127,6 @@ Finally reload the router:
 ### Check installed image
 
 `Router# show version | include System image`
-
-### Delete old, unused images
-
-`Router# delete flash:<old-image>`
 
 ### Reset configuration
 
