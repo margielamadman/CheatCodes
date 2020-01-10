@@ -6,8 +6,11 @@ grep -rnw '/path/to/somewhere/' -e 'pattern'
 
 # You can include and exclude certain file types and directories as well
 
-# Only searchs files with .c or .h extensions
-grep --inlcude=\*.{c,h} -rnw '/path/to/somewhere/' -e 'pattern'
+# Only searches files with .c or .h extensions
+grep --include=\*.{c,h} -rnw '/path/to/somewhere/' -e 'pattern'
+
+# Only php files
+grep --include='*.php' -rnw './' -e 'split'
 
 # Does not search through file with .0 extensions
 grep --exclude=*.o -rnw '/path/to/somewhere/' -e 'pattern'
